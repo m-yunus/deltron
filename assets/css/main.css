@@ -1,16 +1,4 @@
-/**
-* Template Name: UpConstruction
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
@@ -94,9 +82,9 @@ section {
 .section-header h2:before {
   margin: 0 15px 10px 0;
 }
-.download-pdf {
+/* .download-pdf {
   position: absolute;
-  /* top: -15%; */
+
   right: 45px;
   transform: translateY(-100%);
   font-size: 30px;
@@ -106,7 +94,6 @@ section {
 }
 .download-pdf-heading{
   position: absolute;
-    /* top: -10%; */
     right: 18px;
     transform: translateY(-220%);
     font-size: 30px;
@@ -121,6 +108,53 @@ section {
 
 .download-pdf a i {
   margin-right: 5px;
+} */
+/* .download-pdf {
+  margin-top: 10px;
+}
+
+.download-pdf-heading,
+.download-pdf {
+  display: flex;
+  align-items: center;
+}
+
+.download-pdf-heading h6,
+.download-pdf h6 {
+  margin: 0;
+} */
+
+/* .download-pdf a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff8f8;
+}
+
+.download-pdf a:hover {
+  color: #fafafa;
+} */
+.brochure{
+  background-color: #000;
+  height: 60px;
+}
+.btn-special{
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+.btn-special:hover{
+  color: red;
+  text-decoration: underline;
+}
+.icon-btn{
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bi-download {
+  margin-left: 5px;
 }
 
 .section-header h2:after {
@@ -279,24 +313,28 @@ section {
 --------------------------------------------------------------*/
 .header {
   z-index: 997;
-  position: absolute;
+  position: sticky; 
+  /* box-shadow:wheat; */
   padding: 0px 0;
   top: 0;
   left: 0;
   right: 0;
+  height:63px;
+  /* color:#000; */
+  /* background-color: #867979; */
 }
 
 .header .logo img {
 
   object-fit: cover;
- 
-  height: 72px;
+  margin-left: 1px;
+  /* height: 72px; */
 }
 
 .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #0f0c0c;
   margin-bottom: 0;
   font-family: var(--font-primary);
 }
@@ -308,7 +346,7 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .navbar {
     padding: 0;
   }
@@ -329,6 +367,20 @@ section {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
+  .top-bar-area li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .top-pop{
+    display: flex;
+   }
+  .top-pop1{
+   display: flex;
+   justify-content: end;
+  }
+  
 
   .navbar a,
   .navbar a:focus {
@@ -337,9 +389,10 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    /* color: rgba(255, 255, 255, 0.6); */
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -377,7 +430,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #272525;
   }
 
   .navbar .dropdown ul {
@@ -437,7 +490,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+@media (min-width: 1000px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -447,7 +500,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -458,7 +511,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+@media (max-width: 1000px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -480,7 +533,9 @@ section {
     transition: 0.3s;
     z-index: 9998;
   }
-
+.top-bar-area{
+  display: none;
+}
   .navbar a,
   .navbar a:focus {
     display: flex;
@@ -502,6 +557,17 @@ section {
     line-height: 0;
     margin-left: 5px;
   }
+  /* .top-bar-area li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .top-pop1{
+   display: flex;
+   justify-content: end;
+  } */
+  
 
   .navbar a:hover,
   .navbar .active,
@@ -527,7 +593,7 @@ section {
 
   .mobile-nav-show {
     position: relative;
-    color: #fff;
+    color: #000;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -537,7 +603,7 @@ section {
   }
 
   .mobile-nav-hide {
-    color: #fff;
+    color: #ebe0e0;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -1921,8 +1987,8 @@ section {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
   position: relative;
 }
 
@@ -2597,16 +2663,87 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background-color: #191917;
+  /* background: url("../img/footer-bg.jpg") top center no-repeat; */
   background-size: cover;
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 30px 0 20px 0;
   position: relative;
 }
+footer .wrapper{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.flogo{
+  margin-bottom: 65px;
+    width: 150px;
+    display: inline-block;
+}
+.footerNav{
+  margin-bottom: 72px;
+}
+.clearfixer{
+  display: block;
+}
+.footerNav{
+  color: #fff;
+}
+.footerNav a,.socialFooter a,.footerAddress a{
+    padding: 0px 3%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}
+.sites{
+  font-size: 16px;
+  font-weight: 600;
+}
+.sites:hover{
+  cursor: pointer;
+  color: #e70323;
+  text-decoration: underline;
+}
+.socialFooter{
+  display: flex;
+  justify-content: center;
+  
+}
+.footerAddress{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.footerAddress a i {
+  margin-right: 6px; /* Add a small margin on the right side of the icon */
+}
+.copyright{
+  margin-top: 20px
+}
+.credits a{
+  color: #fff;
+}
+.credits a:hover{
+  text-decoration: underline;
+  color: #e70323;
 
-.footer:before {
+}
+/* .footerAddress a{
+    font-weight: 600;
+    padding: 0px 2%;
+    color: #fff;
+} */
+.bi:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  /* color: #e70323; */
+}
+.icon:hover{
+  color: #e70323;
+}
+/* .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.425);
   position: absolute;
   inset: 0;
 }
@@ -2704,10 +2841,11 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
-}
+} */
 .whatsapp-button{
   position: fixed;
    
     left: 17px;
     bottom: 11px
 }
+/* topbar */
