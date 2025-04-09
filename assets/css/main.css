@@ -584,7 +584,7 @@ section {
   padding: 30px 0;
 }
 
-.get-started .content h3 {
+.get-started .content h2 {
   font-size: 36px;
   color: var(--color-secondary);
   font-weight: 600;
@@ -593,7 +593,7 @@ section {
   position: relative;
 }
 
-.get-started .content h3:after {
+.get-started .content h2:after {
   content: "";
   position: absolute;
   display: block;
@@ -613,7 +613,44 @@ section {
   padding: 30px;
   height: 100%;
 }
+.services-list {
+  margin-top: 25px;
+}
 
+.services-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-items li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.service-items li:last-child {
+  border-bottom: none;
+}
+
+.service-items li i {
+  color: #37a8db91; /* Use your brand's primary color */
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .service-items li {
+    padding: 8px 0;
+  }
+}
 @media (max-width: 575px) {
   .get-started .php-email-form {
     padding: 20px;
@@ -1575,7 +1612,7 @@ section {
   }
 }
 
-.hero .info h2 {
+.hero .info h1 {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -1584,7 +1621,7 @@ section {
   position: relative;
 }
 
-.hero .info h2:after {
+.hero .info h1:after {
   content: "";
   position: absolute;
   display: block;
@@ -1598,7 +1635,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .hero .info h2 {
+  .hero .info h1 {
     font-size: 27px;
   }
 }
