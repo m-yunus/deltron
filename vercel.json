@@ -1,0 +1,97 @@
+{
+  "rewrites": [
+    {
+      "source": "/fire-alarm",
+      "destination": "/service-details.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/service-fire-pump",
+      "destination": "/service-fire-pump.html"
+    },
+    {
+      "source": "/service-sprinkler-system",
+      "destination": "/service-sprinkler-system.html"
+    },
+    {
+      "source": "/service-portable-mobile",
+      "destination": "/service-portable-mobile.html"
+    },
+    {
+      "source": "/service-kitchen",
+      "destination": "/service-kitchen.html"
+    },
+    {
+      "source": "/service-clean-agent",
+      "destination": "/service-clean-agent.html"
+    },
+    {
+      "source": "/service-CCTV",
+      "destination": "/service-CCTV.html"
+    },
+    {
+      "source": "/service-passive",
+      "destination": "/service-passive.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/fire-alarm.html",
+      "destination": "/fire-alarm",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/service-fire-pump.html",
+      "destination": "/service-fire-pump",
+      "permanent": true
+    },
+    {
+      "source": "/service-sprinkler-system.html",
+      "destination": "/service-sprinkler-system",
+      "permanent": true
+    },
+    {
+      "source": "/service-portable-mobile.html",
+      "destination": "/service-portable-mobile",
+      "permanent": true
+    },
+    {
+      "source": "/service-kitchen.html",
+      "destination": "/service-kitchen",
+      "permanent": true
+    },
+    {
+      "source": "/service-clean-agent.html",
+      "destination": "/service-clean-agent",
+      "permanent": true
+    },
+    {
+      "source": "/service-CCTV.html",
+      "destination": "/service-CCTV",
+      "permanent": true
+    },
+    {
+      "source": "/service-passive.html",
+      "destination": "/service-passive",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true
+}
