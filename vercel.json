@@ -83,7 +83,7 @@
       "permanent": true
     },
     {
-      "source": "/service-cctv.html",
+      "source": "/cctv.html",
       "destination": "/service-cctv",
       "permanent": true
     },
