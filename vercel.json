@@ -115,7 +115,7 @@
         },
         {
           "key": "Link",
-          "value": "<hhttps://www.deltron.qa/assets/Deltron-Profile.pdf>; rel=\"canonical\""
+          "value": "<https://www.deltron.qa/assets/Deltron-Profile.pdf>; rel=\"canonical\""
         }
       ]
     }
