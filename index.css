@@ -291,6 +291,7 @@
 
 .img-client {
   height: 6rem;
+  width: auto;
 }
 
 .visMisHeader img {
