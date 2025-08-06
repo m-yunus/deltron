@@ -296,6 +296,7 @@
 
 .visMisHeader img {
   width: 100%;
+  height: auto;
 }
 .visMisContent {
   padding: 30px;
